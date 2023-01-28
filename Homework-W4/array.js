@@ -1,11 +1,11 @@
 // Buatlah 100 nilai random (1-50) pada 1 array
-let arr = [
-  20, 39, 38, 7, 36, 35, 4, 33, 32, 31, 11, 2, 13, 14, 15, 16, 10, 18, 19, 40,
-  41, 42, 44, 43, 45, 46, 48, 47, 49, 30, 50, 29, 28, 27, 26, 25, 24, 23, 22,
-  21, 10, 9, 8, 37, 6, 5, 34, 3, 12, 31, 11, 12, 13, 14, 2, 16, 17, 18, 19, 20,
-  21, 39, 38, 37, 36, 35, 34, 47, 32, 1, 28, 29, 30, 27, 26, 25, 24, 23, 22, 40,
-  41, 42, 43, 45, 44, 46, 33, 48, 49, 50, 6, 1, 3, 4, 5, 15, 7, 8, 9, 17,
-];
+let arr = [];
+for (let i = 1; i <= 100; i++) {
+  function getRandom() {
+    return Math.ceil(Math.random() * 50);
+  }
+  arr.push(getRandom(i));
+}
 console.log(arr);
 
 //Pecahlah menjadi 2 ARRAY berdasarkan indexnya, yakni array pada INDEX GENAP dan
